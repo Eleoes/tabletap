@@ -11,140 +11,78 @@ export default function Home() {
         {/* HEADER */}
         {/* MAIN NAVBAR */}
         <nav className="bg-white p-2 flex justify-between">
-            <a href="" className="font-bold text-gray-700 text-2xl">TableTap</a>
-            <ul>
-                <li className="flex">
-                <button className="bg-blue-400 text-white border p-1 px-4 rounded mr-3">SignIn</button>
-                <button className="border p-1 px-4 rounded">SignUp</button>
-                </li>
-            </ul>
+          <a href="" className="font-bold text-gray-700 text-2xl">TableTap</a>
+          <ul>
+            <li className="flex">
+              <button className="bg-blue-400 text-white border p-1 px-4 rounded mr-3">SignIn</button>
+              <button className="border p-1 px-4 rounded">SignUp</button>
+            </li>
+          </ul>
         </nav>
-        {/* RESTAURANT DETAILS PORTION */}
-        <div className="h-96 overflow-hidden">
-          <div className="bg-center bg-gradient-to-r from-[#0f1f47] to-[#5f6984] h-full flex justify-center items-center">
-            <h1 className="text-7xl text-white capitalize text-shadow text-center">Tycoon Kitchen (San Francisco)</h1>
+        {/* HERO BANNER */}
+        <div className="bg-gradient-to-r from-[#5f6984] to-[#0f1f47] p-2">
+          {/* SEARCH BAR */}
+          <div className="text-left text-lg py-3 m-auto flex justify-center">
+            <input className="rounded text-lg mr-3 w-74 p-2 w-[450px]" type="text" placeholder="State, City or town"/>
+            <button className="rounded bg-red-600 px-9 py-2 text-white">Let's go</button>
           </div>
+          {/* SEARCH BAR */}
         </div>
         {/* HEADER */}
-        {/* MAIN CONTENT */}
-        <div className="flex m-auto w-2/3 justify-between items-start 0 -mt-11">
-          <div className="bg-white w-[70%] rounded p-3 shadow">
-            {/* RESTAURANT NAVBAR */}
-            <nav className="flex text-reg border-b pb-2">
-              <a href="" className="mr-7">Overview</a>
-              <a href="" className="mr-7">Menu</a>
-            </nav>
-            {/* RESTAURANT NAVBAR */}
-            {/* RESTAURANT TITLE */}
-            <div className="mt-4 border-b pb-6">
-              <h1 className="font-bold text-6xl">Tycoon Kitchen</h1>
+        <div className="flex py-4 m-auto w-2/3 justify-between items-start">
+          {/* SEARCH SIDE BAR */}
+          <div className="w-1/5">
+            <div className="border-b pb-4">
+              <h1 className="mb-2">Region</h1>
+              <p className="font-light text-reg">Toronto</p>
+              <p className="font-light text-reg">Ottawa</p>
+              <p className="font-light text-reg">Montreal</p>
+              <p className="font-light text-reg">Hamilton</p>
+              <p className="font-light text-reg">Kingston</p>
+              <p className="font-light text-reg">Niagara</p>
             </div>
-            {/* RESTAURANT TITLE */}
-            {/* RATINGS */}
-            <div className="flex items-end">
-              <div className="ratings mt-2 flex   items-center">
-                <p>*****</p>
-                <p className="text-reg ml-3">4.9</p>
-              </div>
-              <div>
-                <p className="text-reg ml-4">600 Reviews</p>
-              </div>
+            <div className="border-b pb-4 mt-3">
+              <h1 className="mb-2">Cuisine</h1>
+              <p className="font-light text-reg">Mexican</p>
+              <p className="font-light text-reg">Italian</p>
+              <p className="font-light text-reg">Thai</p>
             </div>
-            {/* RATINGS */}
-            {/* DESCRIPTION */}
-            <div className="mt-4">
-              <p className="text-lg font-light">
-                Welcome to Tycoon Kitchen. We look forward to seeing you soon.
-              </p>
-            </div>
-            {/* DESCRIPTION */}
-            {/* IMAGES */}
-            <div>
-              <h1 className="font-bold text-3xl mt-10 mb-7 border-b pb-5">
-                7 photos
-              </h1>
-              <div className="flex flex-wrap">
-                <img src="https://resizer.otstatic.com/v2/photos/xlarge/2/51670170.jpg" alt="" className="w-56 h-44 mr-1 mb-1" />
-                <img src="https://resizer.otstatic.com/v2/photos/xlarge/2/51607510.jpg" alt="" className="w-56 h-44 mr-1 mb-1" />
-                <img src="https://resizer.otstatic.com/v2/photos/xlarge/1/51670171.jpg" alt="" className="w-56 h-44 mr-1 mb-1" />
-                <img src="https://resizer.otstatic.com/v2/photos/xlarge/1/51670171.jpg" alt="" className="w-56 h-44 mr-1 mb-1" />
-                <img src="https://resizer.otstatic.com/v2/photos/xlarge/1/51670171.jpg" alt="" className="w-56 h-44 mr-1 mb-1" />
+            <div className="mt-3 pb-4">
+              <h1 className="mb-2">Price</h1>
+              <div className="flex">
+                <button className="border w-full text-reg font-light rounded-l p-2">$</button>
+                <button className="border-r border-t border-b w-full text-reg font-light p-2">$$</button>
+                <button className="border-r border-t border-b w-full text-reg font-light p-2 rounded-r">$$$</button>
               </div>
             </div>
-            {/* IMAGES */}
-            {/* REVIEWS */}
-            <div>
-              <h1 className="font-bold text-3xl mt-10 mb-7 border-b pb-5">
-                What 100 people are saying
-              </h1>
-              {/* REVIEW CARD */}
-              <div>
-                <div className="border-b pb-7 mb-7">
-                  <div className="flex">
-                    <div className="w-1/6 flex flex-col items-center">
-                      <div className="rounded-full bg-blue-400 w-16 h-16 flex items-center justify-center">
-                        <h2 className="text-white text-2xl">MJ</h2>
-                      </div>
-                      <p className="text-center">Michael Jordan</p>
-                    </div>
-                    <div className="ml-10 w-5/6">
-                      <div className="flex items-center">
-                        <div className="flex mr-5">
-                          *****
-                        </div>
-                      </div>
-                      <div className="mt-5">
-                        <p className="text-light font-light">
-                        At present, Tycoon Kitchen has no reviews. Please add a review after your dining experience to help others make a decision about where to eat.
-                        </p>
-                      </div>
-                    </div>
+          </div>
+          {/* SEARCH SIDE BAR */}
+          <div className="w-5/6">
+            {/* RESTAURANT CARD */}
+            <div className="border-b flex pb-5">
+              <img src="https://resizer.otstatic.com/v2/photos/legacy/3/47158974.jpg" alt="" className="w-44 rounded" />
+              <div className="pl-5">
+                <h2 className="text-3xl">Daughter Thai Kitchen</h2>
+                <div className="flex items-start">
+                  <div className="flex mb-2">*****</div>
+                  <p className="ml-2 text-sm">Awesome</p>
+                </div>
+                <div className="mb-9">
+                  <div className="font-light flex text-reg">
+                    <p className="mr-4">$$$</p>
+                    <p className="mr-4">Thai</p>
+                    <p className="mr-4">Ottawa</p>
                   </div>
                 </div>
-              </div>
-              {/* REVIEW CARD */}
-            </div>
-            {/* REVIEWS */}
-          </div>
-          {/* RESERVATION CARD PORTION */}
-          <div className="w-[27%] relative text-reg">
-            <div className="fixed w-[15%] bg-white rounded p-3 shadow">
-              <div className="text-center border-b pb-2 font-bold">
-                <h4 className="mr-7 text-lg">Make a reservation</h4>
-              </div>
-              <div className="my-3 flex flex-col">
-                <label htmlFor="">Party size</label>
-                <select name="" className="py-3 border-b font-light" id="">
-                  <option value="">1 person</option>
-                  <option value="">2 people</option>
-                </select>
-              </div>
-              <div className="flex justify-between">
-                <div className="flex flex-col w-[48%]">
-                  <label htmlFor="">Date</label>
-                  <input type="text" className="py-3 border-b font-light w-28" />
+                <div className="text-red-600">
+                  <a href="">View more information</a>
                 </div>
-                <div className="flex flex-col w-[48%]">
-                  <label htmlFor="">Time</label>
-                  <select className="py-3 border-b font-light">
-                    <option value="">7:30 AM</option>
-                    <option value="">8:30 AM</option>
-                    <option value="">9:30 AM</option>
-                  </select>
-                </div>
-              </div>
-              <div className="mt-5">
-                <button className="bg-red-600 rounded w-full px-4 text-white font-bold h-16">Find a Time</button>
               </div>
             </div>
           </div>
-          {/* RESERVATION CARD PORTION */}
         </div>
-        {/* RESTAURANT DETAILS PORTION */}
-        
       </main>
     </main>
     </>
-    
   )
 }
