@@ -1,18 +1,12 @@
+import Link from "next/link";
+import NavBar from "../../../components/NavBar";
+
 export default function Menu(){
     return (
         <main className="bg-gray-100 min-h-screen w-screen">
             <main className="max-w-screen-2xl m-auto bg-white">
                 {/* HEADER */}
-                {/* MAIN NAVBAR */}
-                <nav className="bg-white p-2 flex justify-between">
-                    <a href="" className="font-bold text-gray-700 text-2xl">TableTap</a>
-                    <ul>
-                    <li className="flex">
-                        <button className="bg-blue-400 text-white border p-1 px-4 rounded mr-3">SignIn</button>
-                        <button className="border p-1 px-4 rounded">SignUp</button>
-                    </li>
-                    </ul>
-                </nav>
+                <NavBar />
                 {/* HERO BANNER */}
                 <div className="h-96 overflow-hidden">
                     <div className="bg-center bg-gradient-to-r from-[#0f1f47] to-[#5f6984] h-full flex justify-center items-center">
@@ -25,8 +19,8 @@ export default function Menu(){
                     <div className="bg-white w-[100%] rounded p-3 shadow">
                         {/* RESTAURANT NAVBAR */}
                         <nav className="flex text-reg border-b pb-2">
-                            <a href="" className="mr-7">Overview</a>
-                            <a href="" className="mr-7">Menu</a>
+                            <Link href="/restaurant/milestone-grill" className="mr-7">Overview</Link>
+                            <Link href="/restaurant/milestone-grill/menu" className="mr-7">Menu</Link>
                         </nav>
                         {/* RESTAURANT NAVBAR */}
                         {/* MENU */}
